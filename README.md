@@ -118,28 +118,14 @@ uv run mkdocs serve
 
 This project includes demo code.
 Run the demo Python modules to confirm everything is working.
+After confirming, we can delete the demo code and use the examples for our project-specific modules, like "data_prep".
 
 In VS Code terminal, run:
 
 ```shell
-uv run python -m analytics_project.demo_module_basics
-uv run python -m analytics_project.demo_module_languages
-uv run python -m analytics_project.demo_module_stats
-uv run python -m analytics_project.demo_module_viz
+#uv run python -m analytics_project.demo_module_basics
+uv run python -m analytics_project.data_prep
 ```
-
-You should see:
-
-- Log messages in the terminal
-- Greetings in several languages
-- Simple statistics
-- A chart window open (close the chart window to continue).
-
-If this works, your project is ready! If not, check:
-
-- Are you in the right folder? (All terminal commands are to be run from the root project folder.)
-- Did you run the full `uv sync --extra dev --extra docs --upgrade` command?
-- Are there any error messages? (ask for help with the exact error)
 
 ---
 
