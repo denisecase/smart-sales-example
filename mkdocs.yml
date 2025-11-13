@@ -1,0 +1,67 @@
+# mkdocs.yml
+# Configuration file for MkDocs (Automated project documentation generator)
+
+# TODO: Change denisecase to your GitHub username (use CTRL F to find all instances)
+# TODO: Change pro-analytics-02-starter to your repository name (use CTRL F to find all instances)
+# TODO: Update site_description
+# TODO: Update site_author
+
+site_name: Professional Analytics Project
+site_url: https://denisecase.github.io/pro-analytics-02-starter/
+repo_url: https://github.com/denisecase/pro-analytics-02-starter
+site_description: Professional Python project demonstrating industry best practices
+site_author: Denise Case
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.sections # Group navigation items
+    - navigation.top # Back-to-top button
+    - search.suggest # Search suggestions as you type
+    - search.highlight # Highlight search terms
+    - content.code.copy # Copy button on code blocks
+    - toc.follow # Highlight current section in TOC
+
+  palette:
+    - scheme: default # Light/dark mode toggle
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            show_root_heading: true # Include module names
+            show_root_toc_entry: true # Include module in TOC
+            docstring_style: google # Professional docstring format
+            show_signature_annotations: true
+            separate_signature: true    # Makes function signatures easier to read
+
+markdown_extensions:
+  - admonition # Note/Warning/Tip boxes
+  - codehilite # Syntax highlighting
+  - tables # Markdown tables
+  - toc:
+      permalink: true # Clickable headers
+      toc_depth: 3
+  - pymdownx.superfences # Code blocks with syntax highlighting
+  - pymdownx.details # Collapsible sections
+
+nav:
+  - Home: index.md
+  - API: api.md
