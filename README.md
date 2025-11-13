@@ -123,7 +123,6 @@ After confirming, we can delete the demo code and use the examples for our proje
 In VS Code terminal, run:
 
 ```shell
-#uv run python -m analytics_project.demo_module_basics
 uv run python -m analytics_project.data_prep
 ```
 
