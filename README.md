@@ -166,5 +166,3 @@ With a working version safe in GitHub, start making changes to the code.
 Before starting a new session, remember to do a `git pull` and keep your tools updated.
 
 Each time forward progress is made, remember to git add-commit-push.
-
-
