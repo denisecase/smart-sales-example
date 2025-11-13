@@ -1,0 +1,10 @@
+2025-11-13 13:28:INFO    AT utils_logger.py:105: Logging to file: C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\project.log
+2025-11-13 13:28:INFO    AT data_prep.py:53: Starting data preparation...
+2025-11-13 13:28:INFO    AT data_prep.py:33: Reading raw data from C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\data\raw\customers_data.csv.
+2025-11-13 13:28:INFO    AT data_prep.py:36: customers_data.csv: loaded DataFrame with shape 201 rows x 4 cols
+2025-11-13 13:28:INFO    AT data_prep.py:67: Cleaned customers data.
+2025-11-13 13:28:INFO    AT data_prep.py:33: Reading raw data from C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\data\raw\products_data.csv.
+2025-11-13 13:28:INFO    AT data_prep.py:36: products_data.csv: loaded DataFrame with shape 100 rows x 4 cols
+2025-11-13 13:28:INFO    AT data_prep.py:33: Reading raw data from C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\data\raw\sales_data.csv.
+2025-11-13 13:28:INFO    AT data_prep.py:36: sales_data.csv: loaded DataFrame with shape 2001 rows x 7 cols
+2025-11-13 13:28:INFO    AT data_prep.py:77: Data preparation complete.

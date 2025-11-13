@@ -3,13 +3,6 @@
 > Use this project to manage smart sales.
 
 - Additional information: <https://github.com/denisecase/pro-analytics-02>
-- Project organization: [STRUCTURE](./STRUCTURE.md)
-- Build professional skills:
-  - **Environment Management**: Every project in isolation
-  - **Code Quality**: Automated checks for fewer bugs
-  - **Documentation**: Use modern project documentation tools
-  - **Testing**: Prove your code works
-  - **Version Control**: Collaborate professionally
 
 ---
 
@@ -123,6 +116,9 @@ After confirming, we can delete the demo code and use the examples for our proje
 In VS Code terminal, run:
 
 ```shell
+uv run python -m analytics_project.data_preparation.prepare_customers
+uv run python -m analytics_project.data_preparation.prepare_products
+uv run python -m analytics_project.data_preparation.prepare_sales
 uv run python -m analytics_project.data_prep
 ```
 

@@ -1,4 +1,4 @@
-"""Module 2: Initial Script to Verify Project Setup.
+"""Data prep pipeline.
 
 File: src/analytics_project/data_prep.py.
 """
@@ -9,6 +9,7 @@ import pathlib
 
 import pandas as pd
 
+from .data_scrubber import DataScrubber
 from .utils_logger import init_logger, logger, project_root
 
 # Set up paths as constants
@@ -52,15 +53,27 @@ def main() -> None:
     logger.info("Starting data preparation...")
 
     # Build explicit paths for each file under data/raw
-    customer_path = RAW_DATA_DIR.joinpath("customers_data.csv")
-    product_path = RAW_DATA_DIR.joinpath("products_data.csv")
-    sales_path = RAW_DATA_DIR.joinpath("sales_data.csv")
+    customer_path: pathlib.Path = RAW_DATA_DIR.joinpath("customers_data.csv")
+    product_path: pathlib.Path = RAW_DATA_DIR.joinpath("products_data.csv")
+    sales_path: pathlib.Path = RAW_DATA_DIR.joinpath("sales_data.csv")
 
-    # Call the function once per file
-    read_and_log(customer_path)
+    # Read them all into a df we can pass in to the DataScrubber
+    df_customers: pd.DataFrame = read_and_log(customer_path)
+
+    if not df_customers.empty:
+        scrubber = DataScrubber(df_customers)
+        scrubber.remove_duplicate_records()
+        df_customers = scrubber.handle_missing_data(fill_value="N/A")
+        logger.info("Cleaned customers data.")
+
+    # Can you extend this to read and clean the other files?
+    # First, name a variable for what is returned by read_and_log
+    # Then, create a DataScrubber instance for that df
+    # Finally, call the methods to clean the data
     read_and_log(product_path)
     read_and_log(sales_path)
 
+    # At the very end, log that we're done.
     logger.info("Data preparation complete.")
 
 
