@@ -2,13 +2,13 @@
 # Configuration file for MkDocs (Automated project documentation generator)
 
 # TODO: Change denisecase to your GitHub username (use CTRL F to find all instances)
-# TODO: Change pro-analytics-02-starter to your repository name (use CTRL F to find all instances)
+# TODO: Change smart-sales-example to your repository name (use CTRL F to find all instances)
 # TODO: Update site_description
 # TODO: Update site_author
 
 site_name: Professional Analytics Project
-site_url: https://denisecase.github.io/pro-analytics-02-starter/
-repo_url: https://github.com/denisecase/pro-analytics-02-starter
+site_url: https://denisecase.github.io/smart-sales-example/
+repo_url: https://github.com/denisecase/smart-sales-example
 site_description: Professional Python project demonstrating industry best practices
 site_author: Denise Case
 docs_dir: docs

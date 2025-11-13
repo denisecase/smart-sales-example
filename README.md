@@ -1,6 +1,6 @@
-# Pro Analytics 02 Python Starter Repository
+# Smart Sales Example Repository
 
-> Use this repo to start a professional Python project.
+> Use this project to manage smart sales.
 
 - Additional information: <https://github.com/denisecase/pro-analytics-02>
 - Project organization: [STRUCTURE](./STRUCTURE.md)
@@ -32,8 +32,8 @@ Complete each step in the following guide.
 It includes the critical commands to set up your local environment (and activate it):
 
 ```shell
-uv venv
 uv python pin 3.12
+uv venv
 uv sync --extra dev --extra docs --upgrade
 uv run pre-commit install
 uv run python --version
