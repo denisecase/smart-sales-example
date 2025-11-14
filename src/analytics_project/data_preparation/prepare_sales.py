@@ -93,7 +93,8 @@ def main() -> None:
     logger.info(f"scripts      : {SCRIPTS_DIR}")
 
     input_file = "sales_data.csv"
-    output_file = "sales_prepared.csv"
+    # TODO: Uncommment after implementing sales data preparation
+    # output_file = "sales_prepared.csv"
 
     # Read raw data
     df = read_raw_data(input_file)

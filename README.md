@@ -120,6 +120,7 @@ uv run python -m analytics_project.data_preparation.prepare_customers
 uv run python -m analytics_project.data_preparation.prepare_products
 uv run python -m analytics_project.data_preparation.prepare_sales
 uv run python -m analytics_project.data_prep
+uv run python -m analytics_project.dw.etl_to_dw
 ```
 
 ---
