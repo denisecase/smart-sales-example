@@ -1,0 +1,9 @@
+2025-11-14 12:40:INFO    AT utils_logger.py:105: Logging to file: C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\project.log
+2025-11-14 12:40:INFO    AT utils_logger.py:116: This is an example info message.
+2025-11-14 12:40:WARNING AT utils_logger.py:117: This is an example warning message.
+2025-11-14 12:40:ERROR   AT utils_logger.py:118: This is an example error message.
+2025-11-14 12:40:INFO    AT utils_logger.py:116: This is an example info message.
+2025-11-14 12:40:WARNING AT utils_logger.py:117: This is an example warning message.
+2025-11-14 12:40:ERROR   AT utils_logger.py:118: This is an example error message.
+2025-11-14 12:40:INFO    AT utils_logger.py:125: View the log output at C:\Users\edaci\Documents\civic-interconnect\smart-sales-example\project.log
+2025-11-14 12:40:INFO    AT test_utils_logger.py:65: Smoke test message
