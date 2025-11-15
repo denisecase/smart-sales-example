@@ -65,3 +65,24 @@ markdown_extensions:
 nav:
   - Home: index.md
   - API: api.md
+
+  - Project Guides:
+      - (Optional) Finalize Warehouse: guide/finalize-datawarehouse.md
+      - Reporting with Power BI: guide/reporting-with-powerBI.md
+      - Reporting with Spark: guide/reporting-with-spark.md
+
+  - Installs:
+      - Power BI: installs/install-powerbi.md
+      - Spark: installs/install-spark.md
+      - uv: installs/install-uv.md
+      - DuckDB: installs/working-with-duckdb.md
+      - SQLite: installs/working-with-sqlite.md
+
+  - Professional Practices:
+      - GH Actions: practices/intro-github-actions.md
+      - MkDocs: practices/project-docs-with-mkdocs.md
+
+  - Reference:
+      - Star Schema: reference/star-schema.md
+
+

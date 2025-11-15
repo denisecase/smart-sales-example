@@ -22,12 +22,13 @@ requires-python = ">=3.12"
 version = "0.0.1"
 
 dependencies = [ # fmt: off
+  "ipykernel",   # Jupyter kernel for notebooks
+  "ipython",     # Enhanced Python shell (needed for notebooks)
   "loguru",      # Better than print() - practice production logging with levels
   "matplotlib",  # Industry standard plotting
   "pandas",      # THE data manipulation tool in analytics
+  # "pyspark",     # TODO: Uncomment on macOS/Linux if you want pyspark available in the Python environment
   "seaborn",     # Statistical charts built on matplotlib
-  "ipython",     # Enhanced Python shell (needed for notebooks)
-  "ipykernel",   # Jupyter kernel for notebooks
 ]  # fmt: on
 
 [project.urls]
