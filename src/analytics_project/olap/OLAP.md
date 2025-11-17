@@ -108,6 +108,10 @@ Which day of the week has the least sales: Friday
 
 **Display Images in Markdown**: To display an image in Markdown use Exclamation Mark, Square Brackets (with caption), then Parentheses (with relative path to the image). See examples below  - adjust the paths when displaying results on the main repository README.md file.
 
+### Display Chart for Goal 1: Sales by Day
+
 ![Sales by Day of Week](../../../data/results/sales_by_day_of_week.png)
+
+### Display Chart for Goal 2: Top Product by Day
 
 ![Top Product by Day of Week](../../../data/results/sales_by_day_and_product.png)
