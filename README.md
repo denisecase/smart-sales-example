@@ -119,9 +119,14 @@ In VS Code terminal, run:
 uv run python -m analytics_project.data_preparation.prepare_customers
 uv run python -m analytics_project.data_preparation.prepare_products
 uv run python -m analytics_project.data_preparation.prepare_sales
+
 uv run python -m analytics_project.data_prep
+
 uv run python -m analytics_project.dw.etl_to_dw
-```
+
+uv run python -m analytics_project.olap.cubing
+uv run python -m analytics_project.olap.goal_sales_by_day
+uv run python -m analytics_project.olap.goal_top_product_by_day
 
 ---
 
