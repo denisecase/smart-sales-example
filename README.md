@@ -127,6 +127,7 @@ uv run python -m analytics_project.dw.etl_to_dw
 uv run python -m analytics_project.olap.cubing
 uv run python -m analytics_project.olap.goal_sales_by_day
 uv run python -m analytics_project.olap.goal_top_product_by_day
+```
 
 ---
 
@@ -134,9 +135,9 @@ uv run python -m analytics_project.olap.goal_top_product_by_day
 
 Anytime we make working changes to code is a good time to git add-commit-push to GitHub.
 
-1. Stage your changes with git add.
-2. Commit your changes with a useful message in quotes.
-3. Push your work to GitHub.
+1. Stage changes with git add.
+2. Commit changes with a useful message in quotes.
+3. Push work to GitHub.
 
 ```shell
 git add .
