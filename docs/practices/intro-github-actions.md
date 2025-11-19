@@ -49,9 +49,10 @@ To view workflow runs:
 We recommend adding these badges to your README.md right after the title.
 Change YOURACCOUNT to your GitHub account name, and YOURREPO to your repository name.
 
+```md
 [![CI Status](https://github.com/YOURACCOUNT/YOURREPO/actions/workflows/ci.yml/badge.svg)](https://github.com/YOURACCOUNT/YOURREPO/actions/workflows/ci.yml)
 [![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://YOURACCOUNT.github.io/YOURREPO/)
-
+```
 
 ## Local Automation: pre-commit Hooks
 
