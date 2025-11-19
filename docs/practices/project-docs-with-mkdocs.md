@@ -102,7 +102,7 @@ uv run mkdocs serve
 
 This project includes a GitHub Action (.github\workflows\deploy-docs.yml) that automatically builds and deploys documentation to GitHub Pages on every push.
 
-The project site will be available at <https://<your-username>.github.io/<your-repo-name>/>
+The project site will be available at `https://YOUR-GH-ACCOUNT.github.io/YOUR-REPO/`
 
 For example, this example project documentation is available at <https://denisecase.github.io/smart-sales-example/>.
 
@@ -112,4 +112,4 @@ We recommend using the GitHub Repository **About** box to link to your documenta
 Click the gear icon and check the box to use your Use your GitHub Pages website.
 Add a short description and topics for a professional touch.
 
-[About](../images/RepoAbout.png)
+![About](../images/RepoAbout.png)
