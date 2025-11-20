@@ -8,7 +8,7 @@
 .vscode/*
 
 # KEEP THESE FILES in a starter template
-# Optional: Remove them after personalizing a project
+# Optional: Remove them after personalizing a project OR if they cause issues
 !.vscode/extensions.json
 !.vscode/settings.json
 
@@ -84,3 +84,14 @@ site/
 .mypy_cache/
 .pytype/
 .cache/
+
+# ----------------------------------------
+# uv.lock
+# ----------------------------------------
+# We ignore uv.lock:
+#   - We install with: uv sync --extra dev --extra docs --upgrade
+#   - We want dependencies to stay updated, not frozen. 
+# 
+# In production repos:
+#   - uv.lock might be committed to guarantee specific versions
+uv.lock
